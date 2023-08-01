@@ -10,3 +10,5 @@ signOutBtn.addEventListener("click" , function (){
 })
 
 
+displayName.innerHTML = `welcome  ${localStorage.getItem("username")}`;
+

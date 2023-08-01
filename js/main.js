@@ -22,7 +22,7 @@ function regExFunc(e, ex) {
 
 
 
-
+let user ;
 
 if (loginBtn == null) {
 
@@ -53,6 +53,8 @@ function loginFunc() {
       ) {
         dontEmpity.classList.replace("d-block", "d-none");
         location.href = "home.html";
+        user = signupList[i].name ;
+        window.localStorage.setItem("username",signupList[i].name)
         return ;
       }
     }
